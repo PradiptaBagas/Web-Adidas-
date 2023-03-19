@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Adidas Web</title>
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="gambar/logo.png" alt="" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Product's</a></li>
+                <li><a href="#">News Letter</a></li>
+                <li><a href="#" >Contact Us</a></li>
+            </ul>
+        </header>
+
+        <div class="content">
+            <div class="textBox">
+                    <h2>Adidas From Germany <br><span>Adolf Dassler</h2>
+                    <p>Perusahaan ini dinamakan atas pendirinya, Adolf Dassler, yang mulai memproduksi 
+                    sepatu pada 1920-an di Herzogenaurach dekat Nuremberg.</p>    
+                    <a href="#">VIEW PRODUCTS</a>
+                </div>
+            <div class="imgBox">
+                <img src="gambar/superstar rmv.png" alt="" class="superstar">
+            </div>
+        </div>
+
+        <ul class="thumb">
+            <li><img src="gambar/superstar rmv.png" onclick="imgSlider('gambar/superstar rmv.png'); changeBgColor('#1e1e1e')"></li>
+            <li><img src="gambar/samba rmv.png" onclick="imgSlider('gambar/samba rmv.png'); changeBgColor('#37625b')"></li>
+            <li><img src="gambar/munchen rmv.png" onclick="imgSlider('gambar/munchen rmv.png'); changeBgColor('#964B00')"></li>
+            <li><img src="gambar/spezial rmv.png" onclick="imgSlider('gambar/spezial rmv.png'); changeBgColor('#5496BF')"></li>
+        </ul>
+
+        <!-- <ul class="sci">
+            <li><a href="#"><img src="gambar/google rmv.png" alt=""></a></li>
+            <li><a href="#"><img src="gambar/Instagram rmv.png" alt=""></a></li>
+            <li><a href="#"><img src="gambar/twiiter rmv.png" alt=""></a></li>
+        </ul> -->
+    </section>
+
+    <script type="text/javascript">
+
+        function imgSlider(anything){
+            document.querySelector('.superstar').src = anything
+        }
+        function changeBgColor(color){
+            const sec = document.querySelector('.sec')
+            sec.style.background = color
+        }
+    </script>
+
+</body>
+</html>
